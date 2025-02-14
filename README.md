@@ -10,10 +10,10 @@ This repository contains an implementation of **Next Character Generation** and 
 ## 🛠 **Project Structure**  
 | File | Description |  
 |------|------------|  
-| **`next_word_generation.py`** | Implements next word prediction using LSTM. |  
-| **`next_character_generation.py`** | Implements next character prediction using LSTM. |  
-| **`processed_data.pkl`** | Preprocessed dataset stored as input-target sequences for character prediction. |  
-| **`dataset.txt`** | The text file used for training the model. |  
+| **`LSTM_word_generator.ipynb`** | Implements next word prediction using LSTM. |  
+| **`LSTM_next_character_generator.ipynb`** | Implements next character prediction using LSTM. |  
+| **`processed_data.zip`** | Preprocessed dataset stored as input-target sequences for character prediction. |  
+| **`Alice’s Adventures in Wonderland.txt`** | The text file used for training the model. |  
 
 ---
 
@@ -38,11 +38,11 @@ pip install torch numpy
 ### **2️⃣ Train the Model**  
 Run either of the scripts:  
 ```bash
-python next_word_generation.py
+python LSTM_word_generator.ipynb
 ```
 or  
 ```bash
-python next_character_generation.py
+python LSTM_next_character_generator.ipynb
 ```
 
 ### **3️⃣ Load Preprocessed Data**  
@@ -56,7 +56,7 @@ with open("processed_data.pkl", "rb") as f:
 ---
 
 ## 📄 **Dataset**  
-The model is trained on **`dataset.txt`**, which contains the text used for learning character/word sequences. You can replace this file with any other text of your choice to train a different model.
+The model is trained on **`Alice’s Adventures in Wonderland.txt`**, which contains the text used for learning character/word sequences. You can replace this file with any other text of your choice to train a different model.
 
 ---
 
@@ -72,9 +72,3 @@ Feel free to **fork** this repository, improve the model, and submit a **pull re
 
 ---
 
-## 📜 **License**  
-This project is open-source and available under the **MIT License**.  
-
----
-
-This README effectively highlights **LSTM** and **PyTorch**, while clearly explaining the **project structure** and usage. Let me know if you need modifications! 🚀
